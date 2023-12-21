@@ -4,16 +4,18 @@
 # Good luck for the 8th loop iteration
 # Best School for the other iterations with while loop
 
-while [$u -le 10]
+u=0
+
+while [ $u -lt 10 ]
 do
-    if [$u -eq 4]
-    then
-        echo "bad luck"
-    elif [$u -eq 8]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-    ((u++))
+  if [ $u -eq 3 ]
+  then
+    echo "bad luck"
+  elif [ $u -eq 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  (( u++ ))
 done
