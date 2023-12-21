@@ -4,12 +4,12 @@
 # Good luck for the 8th loop iteration
 # Best School for the other iterations with while loop
 
-while [ $u -le 10 ]
+while [$u -le 10]
 do
-    if [ $u -eq 4 ]
+    if [$u -eq 4]
     then
         echo "bad luck"
-    elif [ $u -eq 8 ]
+    elif [$u -eq 8]
     then
         echo "good luck"
     else
