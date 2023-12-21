@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Tells a story based on the contents of the `/etc/passwd` file.
+# Bash script displays content of the file /etc/passwd,using the while loop + IFS
 
 while IFS=':' read -r USERNAME PASSWORD USERID GROUP_ID USERIDINFO HOME_DIRECTORY COMMANDSHELL; do
   echo "The user $USERNAME is part of the $GROUP_ID gang,"\
