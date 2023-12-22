@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <time.h>
 
 /**
  * infinite_while - Func makes an infinite loop
