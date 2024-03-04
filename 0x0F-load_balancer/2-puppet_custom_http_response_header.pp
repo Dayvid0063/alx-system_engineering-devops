@@ -31,11 +31,6 @@ server {
 }",
 }
 
-file { '/etc/nginx/sites-enabled/default':
-  ensure => link,
-  target => '/etc/nginx/sites-available/default',
-}
-
 # Ensure Nginx service is running
 service { 'nginx':
   ensure  => running,
