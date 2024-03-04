@@ -6,7 +6,7 @@ exec { 'apt-get-update':
 
 # Install Nginx package
 package { 'nginx':
-  ensure => installed,
+  ensure  => installed,
   require => Exec['apt-get-update'],
 }
 
