@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Function to get info about domains and subdomains
 
-get_domain_info()
-{
+get_domain_info() {
     domain=$1
     subdomain=$2
 
@@ -20,9 +19,8 @@ get_domain_info()
 }
 
 # Check for required arguments
-if [ $# -lt 1 ]; then
-    echo "Usage: $0 <domain> [<subdomain>]"
-    exit 1
+if [ $# -eq 1 ]; then
+    get_domain_info "$1"
+elif [ $# -eq 2 ]; then
+    get_domain_info "$1" "$2"
 fi
-
-get_domain_info "$1" "$2"
