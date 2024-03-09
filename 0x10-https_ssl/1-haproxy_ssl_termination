@@ -34,8 +34,14 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 frontend proxy
         bind *:80
+        mode http
+        http-request redirect scheme https code 301 unless { ssl_fc }
+        http-request set-header X_Forwarded-Proto http
+        default_backend my_backend
+
+frontend proxy2
         bind *:443 ssl crt /etc/haproxy/pems/www.orjidavid.tech.pem
-        redirect scheme https code 301 if !{ ssl_fc }
+        http-request set-header X_Forwarded-Proto https
         default_backend my_backend
 
 backend my_backend
