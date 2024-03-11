@@ -40,7 +40,7 @@ frontend proxy
         default_backend my_backend
 
 frontend proxy2
-        bind *:443 ssl crt /etc/haproxy/pems/www.orjidavid.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.orjidavid.tech.pem
         http-request set-header X_Forwarded-Proto https
         default_backend my_backend
 
