@@ -48,4 +48,4 @@ frontend www-https
 backend www-backend
         balance roundrobin
         server 498500-web-01 100.24.244.220:80 check
-        server 498500-web-02 34.239.250.31:80 check
+        server 498500-web-02 54.197.87.249:80 check
