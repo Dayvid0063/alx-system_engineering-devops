@@ -16,6 +16,6 @@ echo 'frontend proxy
 backend my_backend
         balance roundrobin
         server 498500-web-01 100.24.244.220
-        server 498500-web-02 34.239.250.31' | sudo tee -a /etc/haproxy/haproxy.cfg
+        server 498500-web-02 54.197.87.249' | sudo tee -a /etc/haproxy/haproxy.cfg
 
 sudo service haproxy reload
