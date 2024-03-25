@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     csv_file = "{}.csv".format(user_id)
     with open(csv_file, 'w', newline='') as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for u in todos:
             writer.writerow([user_id, user_name,
                              u.get("completed"), u.get("title")])
